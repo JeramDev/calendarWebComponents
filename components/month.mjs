@@ -12,6 +12,16 @@ export class Month extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
+      <style>
+        .month {
+          width: 550px;
+        }
+        .days {
+          display: grid;
+          grid-template-columns: repeat(7, 1fr);
+          grid-template-rows: repeat(6, 1fr);
+        }
+      </style>
       <div class="month">
         <div class="days">
           ${this.getDays()}

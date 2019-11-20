@@ -9,14 +9,22 @@ export class Day extends HTMLElement {
       <style>
         .day {
           border: 1px solid black;
-          width: 50px;
-          height: 80px;
+          height: 100px;
           font-size: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #60FFF1;
+        }
+        .day:hover {
+          background-color: #44BDB3;
+          cursor: pointer;
         }
       </style>
       <div class = "day">
-        ${dayNumber}
-        ${dayName}
+        <div>${dayNumber}</div>
+        <div>${dayName}</div>
       </div>
     `;
   }
