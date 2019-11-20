@@ -34,7 +34,7 @@ export class Month extends HTMLElement {
     let days = '';
     let day = this.firstDay;
     for (let i = 1; i <= this.maxDay; i++) {
-      let dayName = day.weekdayShort;
+      let dayName = day.weekdayShort.slice(0, -1).toUpperCase();
       days += `<calendar-day number=${i} name=${dayName}></calendar-day>`; 
       day = day.plus({ days: 1 });
     }

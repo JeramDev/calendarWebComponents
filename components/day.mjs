@@ -8,18 +8,22 @@ export class Day extends HTMLElement {
     this.innerHTML = `
       <style>
         .day {
-          border: 1px solid black;
+          border: 2px solid black;
           height: 100px;
+          width: 100px;
           font-size: 30px;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           background-color: #60FFF1;
+          margin: 2px;
+          border-radius: 5%;
         }
         .day:hover {
           background-color: #44BDB3;
           cursor: pointer;
+          border: 2px solid red;
         }
       </style>
       <div class = "day">
